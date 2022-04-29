@@ -14,8 +14,11 @@ class Board
         end
 
         def []=(pos, val)
-            row, col = pos@grid[row][col] = val
+            row, col = pos
+            @grid[row][col] = val
         end
+
+        
 
         def place_mark(pos, mark) #self inside an instance method
             self[pos] = mark
