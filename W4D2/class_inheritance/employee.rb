@@ -1,0 +1,20 @@
+require_relative "manager"
+
+class Employee
+
+    attr_accessor :name, :title, :salary, :boss
+
+    def initialize(name, title, salary, boss)
+        @name = name 
+        @title = title 
+        @salary = salary
+        @boss = boss
+    end
+
+    def bonus(multiplier)
+       return @salary * multiplier
+    end
+
+
+
+end
