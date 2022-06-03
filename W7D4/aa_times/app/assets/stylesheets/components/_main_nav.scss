@@ -1,0 +1,61 @@
+// header{
+//   background-color: aquamarine;
+ 
+// }
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 10px;
+  border-bottom: .3px solid black;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+
+}
+
+.left-nav {
+  display: flex;
+
+
+  > ul {
+
+    display: flex;
+    > li {
+
+    }
+  }
+
+  span {
+
+  }
+}
+
+.right-nav  {
+  
+  > ul {
+    display: flex;
+    > li {
+    }
+
+    > li:last-of-type {
+  
+    }
+  }
+  
+  i {
+
+  }
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+
+}
+
+#sections-sidebar-btn{
+  
+}
