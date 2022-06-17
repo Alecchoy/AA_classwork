@@ -1,0 +1,43 @@
+CREATING the project start
+
+1. Create the canvas
+const canvas = document.querySelector('canvas)
+const c = canvas.getContext('2d')
+c = context 
+
+declare canvas height and width
+
+in html
+<script src="canvas"> </script>
+
+1. make sure we set the canvas site 
+
+
+Move Character with Event Listenersdj
+
+windw.addEventListener('keydown', (event) =>{
+    console.log(event);
+})
+
+
+object collision 
+ - subtract health
+
+ if the right side of our attack box greather than or equal to the left of our enemy we know that we are colliding in that case 
+
+ we need to detech if the left side of our attack box less than or equal to the right side of our enemy
+
+ we need to monitor on both the x and y axis collision
+
+ and play is attacking 
+
+
+ when player is attacking 
+    attacking retangle shows up
+    set a timer to use rectangle
+
+
+    add sprites file location
+
+    animating sprites 
+    crop this and only show one frame at a time and over time our crop location starts to change 
