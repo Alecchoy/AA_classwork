@@ -1,0 +1,72 @@
+*{
+    font-family: 'Raleway';
+}
+
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #172026;
+}
+
+#root{
+    color: #5fcdd9;
+    border: 1px currentColor solid;
+    padding-left: 40px ;
+    padding-right: 40px;
+    border-radius: .25em;
+    background-color: #172026;
+    text-shadow: 
+    0 0 0.25em black,
+    0 0 0.45em currentColor;
+    opacity: 0.5;
+
+    box-shadow: 0 0 0.5em currentColor, inset 0 0 0.5em currentColor;
+    position: relative;
+    z-index: 99;
+}
+
+#root::before{
+    content: '';
+    position: absolute;
+    background-color: #5fcdd9;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.3;
+
+    transition: opacity 100ms linear;
+
+}
+
+#root::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em currentColor, inset 0 0 2em 0.5em currentColor;
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+
+#root:hover{
+    opacity: 1;
+}
+
+#root:hover::before{
+    opacity: 1;
+}
+
+#root:hover::after{
+    opacity: 0.7;
+}
